@@ -1,0 +1,370 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * CDAR design system — colors derived from the institutional logo:
+ * cobalt blue (gear), gold yellow (disc/banner), signal red (book/emblem).
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
+  --color-crimson: var(--crimson);
+  --color-crimson-foreground: var(--crimson-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Hind", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+  --radius: 0.5rem;
+
+  --background: oklch(0.985 0.008 250);
+  --foreground: oklch(0.21 0.06 262);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.21 0.06 262);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.21 0.06 262);
+
+  --primary: oklch(0.42 0.19 265);
+  --primary-foreground: oklch(0.99 0.01 250);
+
+  --secondary: oklch(0.94 0.02 255);
+  --secondary-foreground: oklch(0.32 0.11 264);
+
+  --muted: oklch(0.95 0.012 250);
+  --muted-foreground: oklch(0.5 0.04 258);
+
+  --accent: oklch(0.9 0.13 96);
+  --accent-foreground: oklch(0.25 0.07 262);
+
+  --gold: oklch(0.87 0.17 92);
+  --gold-foreground: oklch(0.24 0.07 262);
+
+  --crimson: oklch(0.55 0.21 27);
+  --crimson-foreground: oklch(0.99 0.01 90);
+
+  --destructive: oklch(0.55 0.21 27);
+  --destructive-foreground: oklch(0.99 0.01 90);
+
+  --border: oklch(0.9 0.02 254);
+  --input: oklch(0.9 0.02 254);
+  --ring: oklch(0.42 0.19 265);
+
+  --chart-1: oklch(0.42 0.19 265);
+  --chart-2: oklch(0.87 0.17 92);
+  --chart-3: oklch(0.55 0.21 27);
+  --chart-4: oklch(0.6 0.13 250);
+  --chart-5: oklch(0.72 0.1 200);
+
+  --sidebar: oklch(0.99 0.006 250);
+  --sidebar-foreground: oklch(0.21 0.06 262);
+  --sidebar-primary: oklch(0.42 0.19 265);
+  --sidebar-primary-foreground: oklch(0.99 0.01 250);
+  --sidebar-accent: oklch(0.94 0.03 96);
+  --sidebar-accent-foreground: oklch(0.25 0.07 262);
+  --sidebar-border: oklch(0.91 0.02 254);
+  --sidebar-ring: oklch(0.42 0.19 265);
+
+  --gradient-hero: linear-gradient(135deg, oklch(0.32 0.16 265), oklch(0.45 0.2 264) 55%, oklch(0.55 0.16 258));
+  --gradient-gold: linear-gradient(100deg, var(--gold), oklch(0.93 0.13 100));
+  --shadow-panel: 0 18px 40px -24px oklch(0.32 0.16 265 / 0.35);
+  --shadow-lift: 0 24px 50px -30px oklch(0.32 0.16 265 / 0.5);
+}
+
+.dark {
+  --background: oklch(0.17 0.045 264);
+  --foreground: oklch(0.96 0.01 250);
+  --card: oklch(0.22 0.05 264);
+  --card-foreground: oklch(0.96 0.01 250);
+  --popover: oklch(0.22 0.05 264);
+  --popover-foreground: oklch(0.96 0.01 250);
+
+  --primary: oklch(0.68 0.16 262);
+  --primary-foreground: oklch(0.16 0.05 264);
+
+  --secondary: oklch(0.28 0.055 264);
+  --secondary-foreground: oklch(0.95 0.01 250);
+
+  --muted: oklch(0.26 0.05 264);
+  --muted-foreground: oklch(0.72 0.03 256);
+
+  --accent: oklch(0.83 0.16 92);
+  --accent-foreground: oklch(0.19 0.05 264);
+
+  --gold: oklch(0.85 0.17 92);
+  --gold-foreground: oklch(0.19 0.05 264);
+
+  --crimson: oklch(0.65 0.19 27);
+  --crimson-foreground: oklch(0.16 0.04 30);
+
+  --destructive: oklch(0.65 0.19 27);
+  --destructive-foreground: oklch(0.16 0.04 30);
+
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 16%);
+  --ring: oklch(0.68 0.16 262);
+
+  --chart-1: oklch(0.68 0.16 262);
+  --chart-2: oklch(0.85 0.17 92);
+  --chart-3: oklch(0.65 0.19 27);
+  --chart-4: oklch(0.7 0.12 220);
+  --chart-5: oklch(0.78 0.1 180);
+
+  --sidebar: oklch(0.2 0.05 264);
+  --sidebar-foreground: oklch(0.96 0.01 250);
+  --sidebar-primary: oklch(0.68 0.16 262);
+  --sidebar-primary-foreground: oklch(0.16 0.05 264);
+  --sidebar-accent: oklch(0.28 0.055 264);
+  --sidebar-accent-foreground: oklch(0.96 0.01 250);
+  --sidebar-border: oklch(1 0 0 / 12%);
+  --sidebar-ring: oklch(0.68 0.16 262);
+
+  --gradient-hero: linear-gradient(135deg, oklch(0.2 0.07 264), oklch(0.29 0.13 264) 55%, oklch(0.36 0.13 258));
+  --shadow-panel: 0 18px 40px -24px oklch(0 0 0 / 0.6);
+  --shadow-lift: 0 24px 50px -30px oklch(0 0 0 / 0.7);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+  }
+}
+
+@utility bg-hero {
+  background-image: var(--gradient-hero);
+}
+
+@utility bg-gold-gradient {
+  background-image: var(--gradient-gold);
+}
+
+@utility shadow-panel {
+  box-shadow: var(--shadow-panel);
+}
+
+@utility shadow-lift {
+  box-shadow: var(--shadow-lift);
+}
+
+/* Tri-color rule echoing the logo: blue / gold / red */
+@utility rule-tricolor {
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    var(--primary) 0 33.33%,
+    var(--gold) 33.33% 66.66%,
+    var(--crimson) 66.66% 100%
+  );
+}
+
+/* Animated 3D crest utilities for the landing hero */
+@utility scene-3d {
+  perspective: 900px;
+  transform-style: preserve-3d;
+}
+
+@keyframes spin-y {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes float-3d {
+  0%,
+  100% {
+    transform: translateY(0) rotateX(8deg) rotateZ(-3deg);
+  }
+  50% {
+    transform: translateY(-16px) rotateX(-6deg) rotateZ(3deg);
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@utility logo-spin-3d {
+  animation: spin-y 14s linear infinite;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+@utility logo-float-3d {
+  animation: float-3d 7s ease-in-out infinite;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+@utility orbit-slow {
+  animation: orbit 26s linear infinite;
+}
+
+@utility orbit-reverse {
+  animation: orbit 34s linear infinite reverse;
+}
+
+/* Layered 3D monogram tile used by the CDAR wordmark */
+@utility logo-mark-3d {
+  box-shadow:
+    inset 0 1px 0 oklch(1 0 0 / 0.35),
+    0 1px 0 var(--gold),
+    0 2px 0 var(--crimson),
+    0 10px 22px -12px oklch(0.32 0.16 265 / 0.65);
+  transform: perspective(500px) rotateX(12deg) rotateY(-12deg);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.group\/logo:hover .logo-mark-3d {
+  transform: perspective(500px) rotateX(0deg) rotateY(0deg) translateY(-2px);
+}
+
+/* Gentle vertical float */
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@utility float-soft {
+  animation: float-soft 6s ease-in-out infinite;
+}
+
+/* Entrance reveal */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@utility reveal-up {
+  animation: reveal-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Interactive 3D card lift */
+@utility card-3d {
+  transform-style: preserve-3d;
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease;
+
+  &:hover {
+    transform: perspective(900px) rotateX(4deg) rotateY(-4deg) translateY(-6px);
+    box-shadow: var(--shadow-lift);
+  }
+}
+
+/* Depth-shifted display type */
+@utility text-3d {
+  text-shadow:
+    0 1px 0 oklch(0 0 0 / 0.18),
+    0 3px 10px oklch(0 0 0 / 0.25);
+}
+
+/* Slow ambient glow used behind hero panels */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.08);
+  }
+}
+
+@utility pulse-glow {
+  animation: pulse-glow 9s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-spin-3d,
+  .logo-float-3d,
+  .orbit-slow,
+  .orbit-reverse,
+  .float-soft,
+  .reveal-up,
+  .pulse-glow {
+    animation: none;
+  }
+
+  .card-3d:hover,
+  .group\/logo:hover .logo-mark-3d {
+    transform: none;
+  }
+}
+
