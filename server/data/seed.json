@@ -1,0 +1,2280 @@
+{
+ "departments": [
+  {
+   "id": 1,
+   "name": "ICT Networking"
+  },
+  {
+   "id": 2,
+   "name": "Computer Science"
+  },
+  {
+   "id": 3,
+   "name": "Electrical Engineering"
+  },
+  {
+   "id": 4,
+   "name": "Business Administration"
+  },
+  {
+   "id": 5,
+   "name": "Information Technology"
+  }
+ ],
+ "programs": [
+  {
+   "id": 1,
+   "name": "BTech Network Engineering",
+   "department_id": 1
+  },
+  {
+   "id": 2,
+   "name": "HND Networking",
+   "department_id": 1
+  },
+  {
+   "id": 3,
+   "name": "BSc Computer Science",
+   "department_id": 2
+  },
+  {
+   "id": 4,
+   "name": "BSc Information Systems",
+   "department_id": 2
+  },
+  {
+   "id": 5,
+   "name": "BEng Electrical & Electronic",
+   "department_id": 3
+  },
+  {
+   "id": 6,
+   "name": "BBA Entrepreneurship",
+   "department_id": 4
+  },
+  {
+   "id": 7,
+   "name": "BBA Accounting",
+   "department_id": 4
+  },
+  {
+   "id": 8,
+   "name": "BTech Information Technology",
+   "department_id": 5
+  },
+  {
+   "id": 9,
+   "name": "HND Information Technology",
+   "department_id": 5
+  },
+  {
+   "id": 10,
+   "name": "Professional Diploma in Information Technology",
+   "department_id": 5
+  },
+  {
+   "id": 11,
+   "name": "Bachelor of Science in Information Technology",
+   "department_id": 5
+  }
+ ],
+ "courses": [
+  {
+   "id": 1,
+   "course_code": "ENTR301",
+   "course_title": "Entrepreneurship Development",
+   "department_id": 1,
+   "program_id": 1
+  },
+  {
+   "id": 2,
+   "course_code": "NET305",
+   "course_title": "Routing & Switching Essentials",
+   "department_id": 1,
+   "program_id": 1
+  },
+  {
+   "id": 3,
+   "course_code": "NET210",
+   "course_title": "Network Fundamentals",
+   "department_id": 1,
+   "program_id": 2
+  },
+  {
+   "id": 4,
+   "course_code": "CSC201",
+   "course_title": "Data Structures & Algorithms",
+   "department_id": 2,
+   "program_id": 3
+  },
+  {
+   "id": 5,
+   "course_code": "CSC404",
+   "course_title": "Machine Learning Foundations",
+   "department_id": 2,
+   "program_id": 3
+  },
+  {
+   "id": 6,
+   "course_code": "INF302",
+   "course_title": "Database Systems Design",
+   "department_id": 2,
+   "program_id": 4
+  },
+  {
+   "id": 7,
+   "course_code": "EEE203",
+   "course_title": "Circuit Analysis II",
+   "department_id": 3,
+   "program_id": 5
+  },
+  {
+   "id": 8,
+   "course_code": "ACC101",
+   "course_title": "Principles of Accounting",
+   "department_id": 4,
+   "program_id": 7
+  },
+  {
+   "id": 9,
+   "course_code": "BIT231",
+   "course_title": "Web-Based Application Development with PHP",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 10,
+   "course_code": "BIT233",
+   "course_title": "Systems Analysis and Design",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 11,
+   "course_code": "BIT235",
+   "course_title": "Visual Basic.NET Programming",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 12,
+   "course_code": "BIT237",
+   "course_title": "Computer Organisation & Architecture",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 13,
+   "course_code": "BIT239",
+   "course_title": "Database Management System Using Oracle",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 14,
+   "course_code": "BIT241",
+   "course_title": "Discrete Mathematics",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 15,
+   "course_code": "BIT243",
+   "course_title": "Data Communications",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 16,
+   "course_code": "BIT245",
+   "course_title": "Mini Project II",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 17,
+   "course_code": "BIT230",
+   "course_title": "Java Programming",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 18,
+   "course_code": "BIT232",
+   "course_title": "Human Computer Interaction",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 19,
+   "course_code": "BIT236",
+   "course_title": "Software Engineering",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 20,
+   "course_code": "BIT238",
+   "course_title": "Computer Networks",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 21,
+   "course_code": "BIT240",
+   "course_title": "E-Commerce",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 22,
+   "course_code": "BIT242",
+   "course_title": "Operating System Concepts",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 23,
+   "course_code": "BMS208",
+   "course_title": "Mini Project III",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 24,
+   "course_code": "DIA201",
+   "course_title": "Industrial Attachment II",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 25,
+   "course_code": "DTM202",
+   "course_title": "Principles of Management",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 26,
+   "course_code": "BIT311",
+   "course_title": "IT Professional Ethics",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 27,
+   "course_code": "BIT323",
+   "course_title": "Advance Excel",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 28,
+   "course_code": "BIT345",
+   "course_title": "Mini Project IV",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 29,
+   "course_code": "BIT363",
+   "course_title": "Statistics for Data Science and Analytics",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 30,
+   "course_code": "BIT365",
+   "course_title": "Advanced Web Tech",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 31,
+   "course_code": "BIT367",
+   "course_title": "Database Design",
+   "department_id": 5,
+   "program_id": 8
+  },
+  {
+   "id": 32,
+   "course_code": "CSC111",
+   "course_title": "Introduction to Databases",
+   "department_id": 2,
+   "program_id": 3
+  },
+  {
+   "id": 33,
+   "course_code": "CSC112",
+   "course_title": "Networking Fundamentals",
+   "department_id": 2,
+   "program_id": 3
+  },
+  {
+   "id": 34,
+   "course_code": "CSC121",
+   "course_title": "Software Development Fundamentals",
+   "department_id": 2,
+   "program_id": 3
+  },
+  {
+   "id": 35,
+   "course_code": "CSC122",
+   "course_title": "Computer Hardware Basics",
+   "department_id": 2,
+   "program_id": 3
+  },
+  {
+   "id": 36,
+   "course_code": "NET101",
+   "course_title": "Computer Fundamentals",
+   "department_id": 1,
+   "program_id": 2
+  },
+  {
+   "id": 37,
+   "course_code": "NET102",
+   "course_title": "Network Cabling & Infrastructure",
+   "department_id": 1,
+   "program_id": 2
+  },
+  {
+   "id": 38,
+   "course_code": "NET110",
+   "course_title": "LAN Technologies",
+   "department_id": 1,
+   "program_id": 2
+  },
+  {
+   "id": 39,
+   "course_code": "NET111",
+   "course_title": "PC Maintenance & Support",
+   "department_id": 1,
+   "program_id": 2
+  },
+  {
+   "id": 40,
+   "course_code": "NET211",
+   "course_title": "Routing Basics",
+   "department_id": 1,
+   "program_id": 2
+  },
+  {
+   "id": 41,
+   "course_code": "NET212",
+   "course_title": "IT Security Essentials",
+   "department_id": 1,
+   "program_id": 2
+  },
+  {
+   "id": 42,
+   "course_code": "NET220",
+   "course_title": "WAN Technologies",
+   "department_id": 1,
+   "program_id": 2
+  },
+  {
+   "id": 43,
+   "course_code": "NET221",
+   "course_title": "Wireless Networking",
+   "department_id": 1,
+   "program_id": 2
+  },
+  {
+   "id": 44,
+   "course_code": "HTI101",
+   "course_title": "Computer Applications",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 45,
+   "course_code": "HTI102",
+   "course_title": "Computer Fundamentals & Hardware",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 46,
+   "course_code": "HTI103",
+   "course_title": "Programming in C",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 47,
+   "course_code": "HTI104",
+   "course_title": "Mathematics for Computing",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 48,
+   "course_code": "HTI105",
+   "course_title": "Web Development Fundamentals",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 49,
+   "course_code": "HTI106",
+   "course_title": "Introduction to Databases",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 50,
+   "course_code": "HTI107",
+   "course_title": "Communication & Study Skills",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 51,
+   "course_code": "HTI108",
+   "course_title": "Statistics for Business",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 52,
+   "course_code": "HTI201",
+   "course_title": "Systems Analysis & Design",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 53,
+   "course_code": "HTI202",
+   "course_title": "Networking Fundamentals",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 54,
+   "course_code": "HTI203",
+   "course_title": "Object-Oriented Programming with Java",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 55,
+   "course_code": "HTI204",
+   "course_title": "Multimedia Technology",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 56,
+   "course_code": "HTI205",
+   "course_title": "Web Application Development",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 57,
+   "course_code": "HTI206",
+   "course_title": "Database Systems Management",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 58,
+   "course_code": "HTI207",
+   "course_title": "Entrepreneurship & Small Business",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 59,
+   "course_code": "HTI208",
+   "course_title": "Industrial Attachment I",
+   "department_id": 5,
+   "program_id": 9
+  },
+  {
+   "id": 60,
+   "course_code": "PDT101",
+   "course_title": "Introduction to Information Technology",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 61,
+   "course_code": "PDT102",
+   "course_title": "Computer Applications & Office Tools",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 62,
+   "course_code": "PDT103",
+   "course_title": "Introduction to Programming",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 63,
+   "course_code": "PDT104",
+   "course_title": "IT Mathematics",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 64,
+   "course_code": "PDT105",
+   "course_title": "Web Design Essentials",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 65,
+   "course_code": "PDT106",
+   "course_title": "Database Fundamentals",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 66,
+   "course_code": "PDT107",
+   "course_title": "Networking Basics",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 67,
+   "course_code": "PDT108",
+   "course_title": "Business Communication",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 68,
+   "course_code": "PDT201",
+   "course_title": "Systems Analysis & Design",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 69,
+   "course_code": "PDT202",
+   "course_title": "Python Programming",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 70,
+   "course_code": "PDT203",
+   "course_title": "Database Design & Administration",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 71,
+   "course_code": "PDT204",
+   "course_title": "Project Management Fundamentals",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 72,
+   "course_code": "PDT205",
+   "course_title": "Web Applications Development",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 73,
+   "course_code": "PDT206",
+   "course_title": "IT Support & Maintenance",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 74,
+   "course_code": "PDT207",
+   "course_title": "E-Commerce Essentials",
+   "department_id": 5,
+   "program_id": 10
+  },
+  {
+   "id": 75,
+   "course_code": "PDT208",
+   "course_title": "Capstone Project",
+   "department_id": 5,
+   "program_id": 10
+  }
+ ],
+ "users": [
+  {
+   "id": 1,
+   "full_name": "Ama Owusu",
+   "email": "ama.owusu@st.cdar.edu",
+   "role": "student",
+   "student_id": "UG20231024",
+   "staff_id": null,
+   "department_id": 1,
+   "program_id": 1,
+   "level": 300,
+   "semester": 1,
+   "phone_number": "0244 100 234",
+   "date_of_birth": "2003-04-12",
+   "gender": "Female",
+   "nationality": "Ghanaian",
+   "address": "Accra, Ghana",
+   "profile_picture": "avatars/ama-owusu.jpg",
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2025-09-14 10:00:00",
+   "updated_at": "2026-08-06 18:05:30.570437"
+  },
+  {
+   "id": 2,
+   "full_name": "Kwame Asante",
+   "email": "kwame.asante@st.cdar.edu",
+   "role": "student",
+   "student_id": "UG20231025",
+   "staff_id": null,
+   "department_id": 2,
+   "program_id": 3,
+   "level": 200,
+   "semester": 1,
+   "phone_number": "0205 201 031",
+   "date_of_birth": "2002-11-03",
+   "gender": "Male",
+   "nationality": "Ghanaian",
+   "address": "Kumasi, Ghana",
+   "profile_picture": "avatars/kwame-asante.jpg",
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2025-09-14 10:20:00",
+   "updated_at": "2026-08-06 18:05:30.580410"
+  },
+  {
+   "id": 3,
+   "full_name": "Efua Danquah",
+   "email": "efua.danquah@st.cdar.edu",
+   "role": "student",
+   "student_id": "UG20231088",
+   "staff_id": null,
+   "department_id": 4,
+   "program_id": 7,
+   "level": 100,
+   "semester": 1,
+   "phone_number": "0263 108 409",
+   "date_of_birth": "2005-07-19",
+   "gender": "Female",
+   "nationality": "Ghanaian",
+   "address": "Takoradi, Ghana",
+   "profile_picture": "avatars/efua-danquah.jpg",
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2025-10-02 08:30:00",
+   "updated_at": "2026-08-06 18:05:30.588388"
+  },
+  {
+   "id": 4,
+   "full_name": "Dr. K. Mensah",
+   "email": "k.mensah@cdar.edu",
+   "role": "lecturer",
+   "student_id": null,
+   "staff_id": null,
+   "department_id": 1,
+   "program_id": null,
+   "level": null,
+   "semester": null,
+   "phone_number": "0244 555 001",
+   "date_of_birth": "1978-03-08",
+   "gender": "Male",
+   "nationality": "Ghanaian",
+   "address": "Accra, Ghana",
+   "profile_picture": "avatars/k-mensah.jpg",
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2024-08-01 09:00:00",
+   "updated_at": "2026-08-06 18:05:30.616964"
+  },
+  {
+   "id": 5,
+   "full_name": "Eng. A. Boateng",
+   "email": "a.boateng@cdar.edu",
+   "role": "lecturer",
+   "student_id": null,
+   "staff_id": null,
+   "department_id": 1,
+   "program_id": null,
+   "level": null,
+   "semester": null,
+   "phone_number": "0205 444 222",
+   "date_of_birth": "1982-06-21",
+   "gender": "Male",
+   "nationality": "Ghanaian",
+   "address": "Cape Coast, Ghana",
+   "profile_picture": "avatars/a-boateng.jpg",
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2024-08-01 09:05:00",
+   "updated_at": "2026-08-06 18:05:30.626938"
+  },
+  {
+   "id": 6,
+   "full_name": "Prof. L. Danso",
+   "email": "l.danso@cdar.edu",
+   "role": "lecturer",
+   "student_id": null,
+   "staff_id": null,
+   "department_id": 2,
+   "program_id": null,
+   "level": null,
+   "semester": null,
+   "phone_number": "0243 908 117",
+   "date_of_birth": "1970-12-05",
+   "gender": "Male",
+   "nationality": "Ghanaian",
+   "address": "Kumasi, Ghana",
+   "profile_picture": "avatars/l-danso.jpg",
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2023-07-11 09:00:00",
+   "updated_at": "2026-08-06 18:05:30.636703"
+  },
+  {
+   "id": 7,
+   "full_name": "Repository Administrator",
+   "email": "admin",
+   "role": "admin",
+   "student_id": null,
+   "staff_id": null,
+   "department_id": null,
+   "program_id": null,
+   "level": null,
+   "semester": null,
+   "phone_number": "0244 000 123",
+   "date_of_birth": "1980-01-01",
+   "gender": "Male",
+   "nationality": "Ghanaian",
+   "address": "Accra, Ghana",
+   "profile_picture": "avatars/admin.jpg",
+   "is_active": true,
+   "is_staff": true,
+   "created_at": "2023-06-01 09:00:00",
+   "updated_at": "2026-08-06 18:05:30.671251"
+  },
+  {
+   "id": 8,
+   "full_name": "Yaw Frimpong",
+   "email": "yaw.frimpong@st.cdar.edu",
+   "role": "student",
+   "student_id": "UG20221001",
+   "staff_id": null,
+   "department_id": 3,
+   "program_id": 5,
+   "level": 200,
+   "semester": 1,
+   "phone_number": "0244 870 112",
+   "date_of_birth": "2002-01-25",
+   "gender": "Male",
+   "nationality": "Ghanaian",
+   "address": "Tamale, Ghana",
+   "profile_picture": "avatars/yaw-frimpong.jpg",
+   "is_active": false,
+   "is_staff": false,
+   "created_at": "2024-09-20 11:00:00",
+   "updated_at": "2026-08-06 18:05:30.597018"
+  },
+  {
+   "id": 9,
+   "full_name": "Nana A. Sarpong",
+   "email": "nana.sarpong@st.cdar.edu",
+   "role": "student",
+   "student_id": "UG20251099",
+   "staff_id": null,
+   "department_id": 5,
+   "program_id": 8,
+   "level": 300,
+   "semester": 1,
+   "phone_number": "0248 660 355",
+   "date_of_birth": "2004-09-30",
+   "gender": "Male",
+   "nationality": "Ghanaian",
+   "address": "Accra, Ghana",
+   "profile_picture": "avatars/nana-sarpong.jpg",
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2025-09-15 09:00:00",
+   "updated_at": "2026-08-06 18:05:30.605994"
+  },
+  {
+   "id": 10,
+   "full_name": "Mr. K. Ofori",
+   "email": "k.ofori@cdar.edu",
+   "role": "lecturer",
+   "student_id": null,
+   "staff_id": null,
+   "department_id": 5,
+   "program_id": null,
+   "level": null,
+   "semester": null,
+   "phone_number": "0264 228 905",
+   "date_of_birth": "1985-02-14",
+   "gender": "Male",
+   "nationality": "Ghanaian",
+   "address": "Tema, Ghana",
+   "profile_picture": "avatars/k-ofori.jpg",
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2024-09-01 09:00:00",
+   "updated_at": "2026-08-06 18:05:30.646317"
+  },
+  {
+   "id": 11,
+   "full_name": "Mrs. A. Acheampong",
+   "email": "a.acheampong@cdar.edu",
+   "role": "lecturer",
+   "student_id": null,
+   "staff_id": null,
+   "department_id": 5,
+   "program_id": null,
+   "level": null,
+   "semester": null,
+   "phone_number": "0246 772 013",
+   "date_of_birth": "1988-08-17",
+   "gender": "Female",
+   "nationality": "Ghanaian",
+   "address": "Sunyani, Ghana",
+   "profile_picture": "avatars/a-acheampong.jpg",
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2024-09-01 09:05:00",
+   "updated_at": "2026-08-06 18:05:30.656290"
+  },
+  {
+   "id": 12,
+   "full_name": "Test CS 100",
+   "email": "testcs100@st.cdar.edu",
+   "role": "student",
+   "student_id": "UG20261000",
+   "staff_id": null,
+   "department_id": 2,
+   "program_id": 3,
+   "level": 100,
+   "semester": 2,
+   "phone_number": "",
+   "date_of_birth": null,
+   "gender": "",
+   "nationality": "",
+   "address": "",
+   "profile_picture": null,
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2026-08-06 15:54:15.661266",
+   "updated_at": "2026-08-06 15:54:15.768375"
+  },
+  {
+   "id": 13,
+   "full_name": "Test CS 100b",
+   "email": "testcs100b@st.cdar.edu",
+   "role": "student",
+   "student_id": "UG20261001",
+   "staff_id": null,
+   "department_id": 2,
+   "program_id": 3,
+   "level": 100,
+   "semester": 2,
+   "phone_number": "",
+   "date_of_birth": null,
+   "gender": "",
+   "nationality": "",
+   "address": "",
+   "profile_picture": null,
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2026-08-06 15:54:38.153579",
+   "updated_at": "2026-08-06 15:54:38.153579"
+  },
+  {
+   "id": 16,
+   "full_name": "Woolley Samuel",
+   "email": "samuel@gmail.com",
+   "role": "lecturer",
+   "student_id": null,
+   "staff_id": null,
+   "department_id": null,
+   "program_id": null,
+   "level": null,
+   "semester": null,
+   "phone_number": "",
+   "date_of_birth": null,
+   "gender": "",
+   "nationality": "",
+   "address": "",
+   "profile_picture": null,
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2026-08-06 15:56:31.857801",
+   "updated_at": "2026-08-06 16:26:21.420563"
+  },
+  {
+   "id": 22,
+   "full_name": "GIDEON MENSAH",
+   "email": "BCCS2601@edu.com",
+   "role": "student",
+   "student_id": "BC/CS/26/01",
+   "staff_id": null,
+   "department_id": 2,
+   "program_id": 3,
+   "level": 100,
+   "semester": 1,
+   "phone_number": "0551557582",
+   "date_of_birth": "2026-08-06",
+   "gender": "Male",
+   "nationality": "Ghanaian",
+   "address": "Acalima",
+   "profile_picture": "",
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2026-08-06 17:01:45.245925",
+   "updated_at": "2026-08-06 20:26:34.638996"
+  },
+  {
+   "id": 23,
+   "full_name": "Profile Pic Test",
+   "email": "BCIT2601@edu.com",
+   "role": "student",
+   "student_id": "BC/IT/26/01",
+   "staff_id": null,
+   "department_id": 5,
+   "program_id": 11,
+   "level": 1,
+   "semester": 1,
+   "phone_number": "020 111 2222",
+   "date_of_birth": "2005-05-05",
+   "gender": "Male",
+   "nationality": "Ghanaian",
+   "address": "Kumasi, Ghana",
+   "profile_picture": "avatars/test-avatar.png",
+   "is_active": true,
+   "is_staff": false,
+   "created_at": "2026-08-06 17:49:14.616281",
+   "updated_at": "2026-08-06 17:49:14.616281"
+  },
+  {
+   "id": 24,
+   "full_name": "HND IT Demo",
+   "email": "HNDIT2601@edu.com",
+   "role": "student",
+   "student_id": "HND/IT/26/01",
+   "staff_id": null,
+   "department_id": 5,
+   "program_id": 9,
+   "level": 200,
+   "semester": 2,
+   "phone_number": "0555 123 456",
+   "date_of_birth": null,
+   "gender": "",
+   "nationality": "",
+   "address": "",
+   "profile_picture": "avatars/hnd-demo.jpg",
+   "is_active": false,
+   "is_staff": false,
+   "created_at": "2026-08-06 17:59:30.320635",
+   "updated_at": "2026-08-06 19:47:48.819682"
+  }
+ ],
+ "materials": [
+  {
+   "id": 1,
+   "title": "ENTR 301 \u2014 Lecture Note 3: Market Entry Strategy",
+   "type": "lecture_note",
+   "course_id": 1,
+   "level": 300,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/entr301-ENTRpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 2.4,
+   "file_hash": "",
+   "uploaded_by_id": 4,
+   "download_count": 214,
+   "created_at": "2026-02-10 09:15:00"
+  },
+  {
+   "id": 2,
+   "title": "ENTR 301 \u2014 End of Semester Past Questions (2021\u20132025)",
+   "type": "past_question",
+   "course_id": 1,
+   "level": 300,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/entr301-ENTRpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 5.1,
+   "file_hash": "",
+   "uploaded_by_id": 4,
+   "download_count": 692,
+   "created_at": "2026-02-12 11:02:00"
+  },
+  {
+   "id": 3,
+   "title": "ENTR 301 \u2014 Group Assignment 2: Business Model Canvas",
+   "type": "assignment",
+   "course_id": 1,
+   "level": 300,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/entr301-ENTRdocx",
+   "file": "",
+   "file_ext": "DOCX",
+   "size_mb": 0.6,
+   "file_hash": "",
+   "uploaded_by_id": 4,
+   "download_count": 121,
+   "created_at": "2026-02-18 08:40:00"
+  },
+  {
+   "id": 4,
+   "title": "NET 305 \u2014 OSPF & EIGRP Configuration Lab Manual",
+   "type": "manual",
+   "course_id": 2,
+   "level": 300,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/net305-NETpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 8.9,
+   "file_hash": "",
+   "uploaded_by_id": 5,
+   "download_count": 431,
+   "created_at": "2026-01-28 14:20:00"
+  },
+  {
+   "id": 5,
+   "title": "NET 305 \u2014 Lecture Slides: VLANs and Trunking",
+   "type": "lecture_note",
+   "course_id": 2,
+   "level": 300,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/net305-NETpptx",
+   "file": "",
+   "file_ext": "PPTX",
+   "size_mb": 12.3,
+   "file_hash": "",
+   "uploaded_by_id": 5,
+   "download_count": 288,
+   "created_at": "2026-02-02 10:05:00"
+  },
+  {
+   "id": 6,
+   "title": "NET 305 \u2014 Mid-Semester Past Questions",
+   "type": "past_question",
+   "course_id": 2,
+   "level": 300,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/net305-NETpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 1.8,
+   "file_hash": "",
+   "uploaded_by_id": 5,
+   "download_count": 517,
+   "created_at": "2026-02-20 16:12:00"
+  },
+  {
+   "id": 7,
+   "title": "NET 210 \u2014 Packet Tracer Tutorial: Building Your First LAN",
+   "type": "tutorial",
+   "course_id": 3,
+   "level": 200,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/net210-NETpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 3.2,
+   "file_hash": "",
+   "uploaded_by_id": 5,
+   "download_count": 356,
+   "created_at": "2026-01-15 09:00:00"
+  },
+  {
+   "id": 8,
+   "title": "NET 210 \u2014 Cabling & Topology Practical Manual",
+   "type": "manual",
+   "course_id": 3,
+   "level": 200,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/net210-NETpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 6.7,
+   "file_hash": "",
+   "uploaded_by_id": 5,
+   "download_count": 199,
+   "created_at": "2026-01-22 13:35:00"
+  },
+  {
+   "id": 9,
+   "title": "CSC 201 \u2014 Balanced Trees and Heaps (Notes 6)",
+   "type": "lecture_note",
+   "course_id": 4,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/csc201-CSCpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 4.4,
+   "file_hash": "",
+   "uploaded_by_id": 6,
+   "download_count": 604,
+   "created_at": "2026-02-05 07:45:00"
+  },
+  {
+   "id": 10,
+   "title": "CSC 201 \u2014 Past Questions Compilation",
+   "type": "past_question",
+   "course_id": 4,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/csc201-CSCpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 3.9,
+   "file_hash": "",
+   "uploaded_by_id": 6,
+   "download_count": 812,
+   "created_at": "2026-02-09 12:10:00"
+  },
+  {
+   "id": 11,
+   "title": "CSC 404 \u2014 Gradient Descent Tutorial Notebook Pack",
+   "type": "tutorial",
+   "course_id": 5,
+   "level": 400,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/csc404-CSCzip",
+   "file": "",
+   "file_ext": "ZIP",
+   "size_mb": 22.5,
+   "file_hash": "",
+   "uploaded_by_id": 6,
+   "download_count": 143,
+   "created_at": "2026-03-01 15:25:00"
+  },
+  {
+   "id": 12,
+   "title": "CSC 404 \u2014 Final Year Project Report Template",
+   "type": "project",
+   "course_id": 5,
+   "level": 400,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/csc404-CSCdocx",
+   "file": "",
+   "file_ext": "DOCX",
+   "size_mb": 1.1,
+   "file_hash": "",
+   "uploaded_by_id": 6,
+   "download_count": 977,
+   "created_at": "2026-03-04 09:30:00"
+  },
+  {
+   "id": 13,
+   "title": "CSC 404 \u2014 Research Paper: Transformers in Low-Resource NLP",
+   "type": "research_paper",
+   "course_id": 5,
+   "level": 400,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/csc404-CSCpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 7.8,
+   "file_hash": "",
+   "uploaded_by_id": 6,
+   "download_count": 265,
+   "created_at": "2026-03-07 18:00:00"
+  },
+  {
+   "id": 14,
+   "title": "INF 302 \u2014 Normalization Workshop (1NF \u2192 BCNF)",
+   "type": "lecture_note",
+   "course_id": 6,
+   "level": 300,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/inf302-INFpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 2.9,
+   "file_hash": "",
+   "uploaded_by_id": 6,
+   "download_count": 388,
+   "created_at": "2026-02-14 10:50:00"
+  },
+  {
+   "id": 15,
+   "title": "INF 302 \u2014 SQL Practical Manual with Sample Schemas",
+   "type": "manual",
+   "course_id": 6,
+   "level": 300,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/inf302-INFpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 9.4,
+   "file_hash": "",
+   "uploaded_by_id": 6,
+   "download_count": 452,
+   "created_at": "2026-02-16 11:15:00"
+  },
+  {
+   "id": 16,
+   "title": "EEE 203 \u2014 Thevenin & Norton Assignment Set",
+   "type": "assignment",
+   "course_id": 7,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/eee203-EEEpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 1.3,
+   "file_hash": "",
+   "uploaded_by_id": 6,
+   "download_count": 176,
+   "created_at": "2026-01-19 08:20:00"
+  },
+  {
+   "id": 17,
+   "title": "EEE 203 \u2014 Past Questions with Worked Solutions",
+   "type": "past_question",
+   "course_id": 7,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/eee203-EEEpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 6.2,
+   "file_hash": "",
+   "uploaded_by_id": 6,
+   "download_count": 641,
+   "created_at": "2026-01-26 17:05:00"
+  },
+  {
+   "id": 18,
+   "title": "ACC 101 \u2014 Trial Balance Lecture Notes",
+   "type": "lecture_note",
+   "course_id": 8,
+   "level": 100,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/acc101-ACCpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 2.1,
+   "file_hash": "",
+   "uploaded_by_id": 6,
+   "download_count": 523,
+   "created_at": "2026-01-10 09:10:00"
+  },
+  {
+   "id": 19,
+   "title": "ACC 101 \u2014 Ledger Posting Tutorial Sheets",
+   "type": "tutorial",
+   "course_id": 8,
+   "level": 100,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/acc101-ACCdocx",
+   "file": "",
+   "file_ext": "DOCX",
+   "size_mb": 0.9,
+   "file_hash": "",
+   "uploaded_by_id": 6,
+   "download_count": 310,
+   "created_at": "2026-01-13 14:00:00"
+  },
+  {
+   "id": 20,
+   "title": "ACC 101 \u2014 Semester Past Questions Bundle",
+   "type": "past_question",
+   "course_id": 8,
+   "level": 100,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/acc101-ACCzip",
+   "file": "",
+   "file_ext": "ZIP",
+   "size_mb": 11.6,
+   "file_hash": "",
+   "uploaded_by_id": 6,
+   "download_count": 738,
+   "created_at": "2026-01-30 15:45:00"
+  },
+  {
+   "id": 21,
+   "title": "BIT 231 \u2014 PHP & MySQL: Getting Started Lecture Notes",
+   "type": "lecture_note",
+   "course_id": 9,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit231-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 3.1,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 402,
+   "created_at": "2026-02-04 10:10:00"
+  },
+  {
+   "id": 22,
+   "title": "BIT 231 \u2014 Session Management & Forms Assignment",
+   "type": "assignment",
+   "course_id": 9,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit231-BITdocx",
+   "file": "",
+   "file_ext": "DOCX",
+   "size_mb": 0.8,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 186,
+   "created_at": "2026-02-11 09:30:00"
+  },
+  {
+   "id": 23,
+   "title": "BIT 233 \u2014 Use-Case & Class Diagram Tutorial Sheets",
+   "type": "tutorial",
+   "course_id": 10,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit233-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 2.2,
+   "file_hash": "",
+   "uploaded_by_id": 11,
+   "download_count": 253,
+   "created_at": "2026-02-06 14:00:00"
+  },
+  {
+   "id": 24,
+   "title": "BIT 235 \u2014 Object-Oriented Programming in Visual Basic .NET",
+   "type": "lecture_note",
+   "course_id": 11,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit235-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 4,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 331,
+   "created_at": "2026-02-08 11:20:00"
+  },
+  {
+   "id": 25,
+   "title": "BIT 237 \u2014 Processor Datapath & Control Past Questions",
+   "type": "past_question",
+   "course_id": 12,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit237-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 2.9,
+   "file_hash": "",
+   "uploaded_by_id": 11,
+   "download_count": 471,
+   "created_at": "2026-02-13 16:40:00"
+  },
+  {
+   "id": 26,
+   "title": "BIT 239 \u2014 Oracle SQL: DDL & DML Practical Manual",
+   "type": "manual",
+   "course_id": 13,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit239-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 5.4,
+   "file_hash": "",
+   "uploaded_by_id": 11,
+   "download_count": 519,
+   "created_at": "2026-02-05 13:10:00"
+  },
+  {
+   "id": 27,
+   "title": "BIT 239 \u2014 PL/SQL Block Programming Past Questions",
+   "type": "past_question",
+   "course_id": 13,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit239-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 3.3,
+   "file_hash": "",
+   "uploaded_by_id": 11,
+   "download_count": 388,
+   "created_at": "2026-02-15 10:05:00"
+  },
+  {
+   "id": 28,
+   "title": "BIT 241 \u2014 Set Theory & Propositional Logic Exercise Pack",
+   "type": "assignment",
+   "course_id": 14,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit241-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 1.6,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 217,
+   "created_at": "2026-02-09 08:50:00"
+  },
+  {
+   "id": 29,
+   "title": "BIT 243 \u2014 OSI Model & Transmission Media Lecture Notes",
+   "type": "lecture_note",
+   "course_id": 15,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit243-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 3.7,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 294,
+   "created_at": "2026-02-03 09:25:00"
+  },
+  {
+   "id": 30,
+   "title": "BIT 230 \u2014 Java Collections & Exception Handling Tutorial",
+   "type": "tutorial",
+   "course_id": 17,
+   "level": 200,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/bit230-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 3,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 366,
+   "created_at": "2026-07-08 10:30:00"
+  },
+  {
+   "id": 31,
+   "title": "BIT 230 \u2014 Object-Oriented Programming in Java Notes",
+   "type": "lecture_note",
+   "course_id": 17,
+   "level": 200,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/bit230-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 4.5,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 421,
+   "created_at": "2026-07-05 09:00:00"
+  },
+  {
+   "id": 32,
+   "title": "BIT 238 \u2014 Subnetting Practice Past Questions",
+   "type": "past_question",
+   "course_id": 20,
+   "level": 200,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/bit238-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 2.4,
+   "file_hash": "",
+   "uploaded_by_id": 11,
+   "download_count": 534,
+   "created_at": "2026-07-11 15:20:00"
+  },
+  {
+   "id": 33,
+   "title": "BIT 240 \u2014 E-Commerce Architecture Assignment",
+   "type": "assignment",
+   "course_id": 21,
+   "level": 200,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/bit240-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 1.2,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 143,
+   "created_at": "2026-07-09 12:45:00"
+  },
+  {
+   "id": 34,
+   "title": "BIT 367 \u2014 ER Modelling & Normalization Lecture Notes",
+   "type": "lecture_note",
+   "course_id": 31,
+   "level": 300,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit367-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 3.9,
+   "file_hash": "",
+   "uploaded_by_id": 11,
+   "download_count": 456,
+   "created_at": "2026-02-16 09:35:00"
+  },
+  {
+   "id": 35,
+   "title": "BIT 367 \u2014 Database Design Past Questions (2022\u20132026)",
+   "type": "past_question",
+   "course_id": 31,
+   "level": 300,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit367-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 4.7,
+   "file_hash": "",
+   "uploaded_by_id": 11,
+   "download_count": 512,
+   "created_at": "2026-02-18 11:15:00"
+  },
+  {
+   "id": 36,
+   "title": "BIT 365 \u2014 REST APIs & Frontend Integration Lab Manual",
+   "type": "manual",
+   "course_id": 30,
+   "level": 300,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit365-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 6.8,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 347,
+   "created_at": "2026-02-14 14:55:00"
+  },
+  {
+   "id": 37,
+   "title": "BIT 245 \u2014 Mini Project II Report Template",
+   "type": "project",
+   "course_id": 16,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit245-BITdocx",
+   "file": "",
+   "file_ext": "DOCX",
+   "size_mb": 1.4,
+   "file_hash": "",
+   "uploaded_by_id": 11,
+   "download_count": 198,
+   "created_at": "2026-02-10 08:20:00"
+  },
+  {
+   "id": 38,
+   "title": "BIT 236 \u2014 Agile & Scrum in Software Engineering",
+   "type": "lecture_note",
+   "course_id": 19,
+   "level": 200,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/bit236-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 3.5,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 289,
+   "created_at": "2026-07-06 13:40:00"
+  },
+  {
+   "id": 39,
+   "title": "BIT 311 \u2014 Professional Ethics Case Study Pack",
+   "type": "lecture_note",
+   "course_id": 26,
+   "level": 300,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/bit311-BITpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 2.8,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 244,
+   "created_at": "2026-02-07 10:40:00"
+  },
+  {
+   "id": 42,
+   "title": "ENTR-4873",
+   "type": "assignment",
+   "course_id": 6,
+   "level": 200,
+   "semester": 1,
+   "file_url": "",
+   "file": "materials/CDAR_System_and_API_Documentation.docx",
+   "file_ext": "DOCX",
+   "size_mb": 0,
+   "file_hash": "c1940f59fd3d34e4fe5d11dea9f8b6221b7bd0495a9de1b47672d5d3860b8c8a",
+   "uploaded_by_id": 16,
+   "download_count": 0,
+   "created_at": "2026-08-06 15:58:45.135540"
+  },
+  {
+   "id": 46,
+   "title": "ENTR-7434",
+   "type": "tutorial",
+   "course_id": 4,
+   "level": 400,
+   "semester": 1,
+   "file_url": "",
+   "file": "materials/CDAR_System_and_API_Documentation_vYzzCzl.docx",
+   "file_ext": "DOCX",
+   "size_mb": 0,
+   "file_hash": "c1940f59fd3d34e4fe5d11dea9f8b6221b7bd0495a9de1b47672d5d3860b8c8a",
+   "uploaded_by_id": 16,
+   "download_count": 0,
+   "created_at": "2026-08-06 16:00:55.770574"
+  },
+  {
+   "id": 51,
+   "title": "NET 101 \u2014 Computer Fundamentals Lecture Notes",
+   "type": "lecture_note",
+   "course_id": 36,
+   "level": 100,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/net101-NETpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 2.2,
+   "file_hash": "",
+   "uploaded_by_id": 5,
+   "download_count": 176,
+   "created_at": "2026-01-12 09:00:00"
+  },
+  {
+   "id": 52,
+   "title": "NET 102 \u2014 Structured Cabling Practice Manual",
+   "type": "manual",
+   "course_id": 37,
+   "level": 100,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/net102-NETpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 5.8,
+   "file_hash": "",
+   "uploaded_by_id": 5,
+   "download_count": 143,
+   "created_at": "2026-01-18 11:30:00"
+  },
+  {
+   "id": 53,
+   "title": "NET 110 \u2014 Building a LAN in Packet Tracer Tutorial",
+   "type": "tutorial",
+   "course_id": 38,
+   "level": 100,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/net110-NETpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 3.4,
+   "file_hash": "",
+   "uploaded_by_id": 5,
+   "download_count": 121,
+   "created_at": "2026-01-20 14:00:00"
+  },
+  {
+   "id": 54,
+   "title": "NET 211 \u2014 Static & Default Routing Past Questions",
+   "type": "past_question",
+   "course_id": 40,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/net211-NETpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 2.1,
+   "file_hash": "",
+   "uploaded_by_id": 5,
+   "download_count": 168,
+   "created_at": "2026-02-17 10:20:00"
+  },
+  {
+   "id": 55,
+   "title": "NET 212 \u2014 Security Hardening Checklist Manual",
+   "type": "manual",
+   "course_id": 41,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/net212-NETpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 4.6,
+   "file_hash": "",
+   "uploaded_by_id": 5,
+   "download_count": 132,
+   "created_at": "2026-02-21 09:45:00"
+  },
+  {
+   "id": 56,
+   "title": "HTI 101 \u2014 Word & Spreadsheet Practical Sheets",
+   "type": "manual",
+   "course_id": 44,
+   "level": 100,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/hti101-HTIpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 3,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 254,
+   "created_at": "2026-01-11 08:30:00"
+  },
+  {
+   "id": 57,
+   "title": "HTI 103 \u2014 C Programming Basics Tutorial Pack",
+   "type": "tutorial",
+   "course_id": 46,
+   "level": 100,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/hti103-HTIpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 2.7,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 289,
+   "created_at": "2026-01-14 10:00:00"
+  },
+  {
+   "id": 58,
+   "title": "HTI 105 \u2014 HTML/CSS Getting Started Lecture Notes",
+   "type": "lecture_note",
+   "course_id": 48,
+   "level": 100,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/hti105-HTIpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 3.3,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 214,
+   "created_at": "2026-01-21 13:15:00"
+  },
+  {
+   "id": 59,
+   "title": "HTI 202 \u2014 OSI Model & Topologies Lecture Notes",
+   "type": "lecture_note",
+   "course_id": 53,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/hti202-HTIpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 3.6,
+   "file_hash": "",
+   "uploaded_by_id": 11,
+   "download_count": 187,
+   "created_at": "2026-02-04 09:10:00"
+  },
+  {
+   "id": 60,
+   "title": "HTI 205 \u2014 PHP Forms & Sessions Assignment",
+   "type": "assignment",
+   "course_id": 56,
+   "level": 200,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/hti205-HTIdocx",
+   "file": "",
+   "file_ext": "DOCX",
+   "size_mb": 0.9,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 156,
+   "created_at": "2026-07-10 09:00:00"
+  },
+  {
+   "id": 61,
+   "title": "HTI 206 \u2014 SQL DDL/DML Practical Manual",
+   "type": "manual",
+   "course_id": 57,
+   "level": 200,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/hti206-HTIpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 5.1,
+   "file_hash": "",
+   "uploaded_by_id": 11,
+   "download_count": 143,
+   "created_at": "2026-07-12 10:30:00"
+  },
+  {
+   "id": 62,
+   "title": "PDT 101 \u2014 Introduction to IT Lecture Notes",
+   "type": "lecture_note",
+   "course_id": 60,
+   "level": 100,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/pdt101-PDTpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 2.5,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 198,
+   "created_at": "2026-01-10 08:00:00"
+  },
+  {
+   "id": 63,
+   "title": "PDT 103 \u2014 Python Basics Tutorial Pack",
+   "type": "tutorial",
+   "course_id": 62,
+   "level": 100,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/pdt103-PDTpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 3.1,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 165,
+   "created_at": "2026-01-15 09:20:00"
+  },
+  {
+   "id": 64,
+   "title": "PDT 105 \u2014 Responsive Web Design Past Questions",
+   "type": "past_question",
+   "course_id": 64,
+   "level": 100,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/pdt105-PDTpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 2.3,
+   "file_hash": "",
+   "uploaded_by_id": 11,
+   "download_count": 142,
+   "created_at": "2026-01-22 12:00:00"
+  },
+  {
+   "id": 65,
+   "title": "PDT 202 \u2014 Python Data Structures Assignment",
+   "type": "assignment",
+   "course_id": 69,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/pdt202-PDTpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 1.2,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 128,
+   "created_at": "2026-02-09 08:40:00"
+  },
+  {
+   "id": 66,
+   "title": "PDT 204 \u2014 Project Charter Template Pack",
+   "type": "project",
+   "course_id": 71,
+   "level": 200,
+   "semester": 1,
+   "file_url": "https://cdn.cdar.edu/files/pdt204-PDTdocx",
+   "file": "",
+   "file_ext": "DOCX",
+   "size_mb": 1,
+   "file_hash": "",
+   "uploaded_by_id": 11,
+   "download_count": 117,
+   "created_at": "2026-02-13 11:50:00"
+  },
+  {
+   "id": 67,
+   "title": "PDT 205 \u2014 Full-Stack CRUD Lab Manual",
+   "type": "manual",
+   "course_id": 72,
+   "level": 200,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/pdt205-PDTpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 6.2,
+   "file_hash": "",
+   "uploaded_by_id": 10,
+   "download_count": 134,
+   "created_at": "2026-07-11 14:20:00"
+  },
+  {
+   "id": 68,
+   "title": "PDT 206 \u2014 PC Diagnostics & Troubleshooting Manual",
+   "type": "manual",
+   "course_id": 73,
+   "level": 200,
+   "semester": 2,
+   "file_url": "https://cdn.cdar.edu/files/pdt206-PDTpdf",
+   "file": "",
+   "file_ext": "PDF",
+   "size_mb": 4.9,
+   "file_hash": "",
+   "uploaded_by_id": 11,
+   "download_count": 121,
+   "created_at": "2026-07-13 09:35:00"
+  }
+ ],
+ "notifications": [
+  {
+   "id": 1,
+   "title": "New past questions for NET 305",
+   "body": "Eng. A. Boateng uploaded \u201cMid-Semester Past Questions\u201d to NET305, Level 300, Semester 1.",
+   "kind": "new_material",
+   "recipient_id": null,
+   "broadcast": true,
+   "read": false,
+   "created_at": "2026-02-20 16:12:00"
+  },
+  {
+   "id": 2,
+   "title": "Upload confirmed",
+   "body": "Your file \u201cENTR 301 \u2014 Group Assignment 2\u201d was published successfully and is now downloadable.",
+   "kind": "upload_confirmed",
+   "recipient_id": null,
+   "broadcast": true,
+   "read": false,
+   "created_at": "2026-02-18 08:41:00"
+  },
+  {
+   "id": 3,
+   "title": "New lecture notes for INF 302",
+   "body": "Dr. G. Appiah added \u201cNormalization Workshop (1NF \u2192 BCNF)\u201d.",
+   "kind": "new_material",
+   "recipient_id": null,
+   "broadcast": true,
+   "read": false,
+   "created_at": "2026-02-14 10:52:00"
+  },
+  {
+   "id": 4,
+   "title": "Scheduled maintenance",
+   "body": "The repository will be read-only on Sunday 02:00\u201303:00 GMT for planned storage maintenance.",
+   "kind": "system",
+   "recipient_id": null,
+   "broadcast": true,
+   "read": true,
+   "created_at": "2026-02-11 07:00:00"
+  },
+  {
+   "id": 5,
+   "title": "New research paper in CSC 404",
+   "body": "Prof. L. Danso shared \u201cTransformers in Low-Resource NLP\u201d.",
+   "kind": "new_material",
+   "recipient_id": null,
+   "broadcast": true,
+   "read": true,
+   "created_at": "2026-03-07 18:02:00"
+  }
+ ],
+ "assignments": [
+  {
+   "id": 2,
+   "course_id": 2,
+   "lecturer_id": 5,
+   "created_at": "2026-08-06 12:15:43.261754"
+  },
+  {
+   "id": 3,
+   "course_id": 3,
+   "lecturer_id": 5,
+   "created_at": "2026-08-06 12:15:43.272725"
+  },
+  {
+   "id": 4,
+   "course_id": 4,
+   "lecturer_id": 6,
+   "created_at": "2026-08-06 12:15:43.280704"
+  },
+  {
+   "id": 5,
+   "course_id": 5,
+   "lecturer_id": 6,
+   "created_at": "2026-08-06 12:15:43.287686"
+  },
+  {
+   "id": 6,
+   "course_id": 6,
+   "lecturer_id": 6,
+   "created_at": "2026-08-06 12:15:43.294666"
+  },
+  {
+   "id": 7,
+   "course_id": 7,
+   "lecturer_id": 6,
+   "created_at": "2026-08-06 12:15:43.301647"
+  },
+  {
+   "id": 8,
+   "course_id": 8,
+   "lecturer_id": 6,
+   "created_at": "2026-08-06 12:15:43.307632"
+  },
+  {
+   "id": 9,
+   "course_id": 9,
+   "lecturer_id": 10,
+   "created_at": "2026-08-06 12:15:43.313135"
+  },
+  {
+   "id": 10,
+   "course_id": 10,
+   "lecturer_id": 11,
+   "created_at": "2026-08-06 12:15:43.320119"
+  },
+  {
+   "id": 11,
+   "course_id": 11,
+   "lecturer_id": 10,
+   "created_at": "2026-08-06 12:15:43.326100"
+  },
+  {
+   "id": 12,
+   "course_id": 13,
+   "lecturer_id": 11,
+   "created_at": "2026-08-06 12:15:43.332084"
+  },
+  {
+   "id": 13,
+   "course_id": 14,
+   "lecturer_id": 10,
+   "created_at": "2026-08-06 12:15:43.339065"
+  },
+  {
+   "id": 14,
+   "course_id": 17,
+   "lecturer_id": 10,
+   "created_at": "2026-08-06 12:15:43.344904"
+  },
+  {
+   "id": 15,
+   "course_id": 20,
+   "lecturer_id": 11,
+   "created_at": "2026-08-06 12:15:43.351887"
+  },
+  {
+   "id": 16,
+   "course_id": 21,
+   "lecturer_id": 10,
+   "created_at": "2026-08-06 12:15:43.357871"
+  },
+  {
+   "id": 17,
+   "course_id": 31,
+   "lecturer_id": 11,
+   "created_at": "2026-08-06 12:15:43.363854"
+  },
+  {
+   "id": 18,
+   "course_id": 30,
+   "lecturer_id": 10,
+   "created_at": "2026-08-06 12:15:43.369837"
+  },
+  {
+   "id": 20,
+   "course_id": 8,
+   "lecturer_id": 4,
+   "created_at": "2026-08-06 15:38:59.782141"
+  },
+  {
+   "id": 21,
+   "course_id": 9,
+   "lecturer_id": 4,
+   "created_at": "2026-08-06 15:39:07.080859"
+  },
+  {
+   "id": 22,
+   "course_id": 20,
+   "lecturer_id": 4,
+   "created_at": "2026-08-06 15:39:13.439480"
+  },
+  {
+   "id": 23,
+   "course_id": 15,
+   "lecturer_id": 4,
+   "created_at": "2026-08-06 15:39:17.527106"
+  },
+  {
+   "id": 24,
+   "course_id": 28,
+   "lecturer_id": 4,
+   "created_at": "2026-08-06 15:39:22.554916"
+  },
+  {
+   "id": 25,
+   "course_id": 17,
+   "lecturer_id": 5,
+   "created_at": "2026-08-06 15:39:30.115502"
+  },
+  {
+   "id": 26,
+   "course_id": 9,
+   "lecturer_id": 5,
+   "created_at": "2026-08-06 15:39:33.865574"
+  },
+  {
+   "id": 27,
+   "course_id": 26,
+   "lecturer_id": 5,
+   "created_at": "2026-08-06 15:39:40.307673"
+  },
+  {
+   "id": 28,
+   "course_id": 30,
+   "lecturer_id": 11,
+   "created_at": "2026-08-06 15:39:55.673533"
+  },
+  {
+   "id": 29,
+   "course_id": 29,
+   "lecturer_id": 11,
+   "created_at": "2026-08-06 15:40:01.545518"
+  },
+  {
+   "id": 30,
+   "course_id": 20,
+   "lecturer_id": 6,
+   "created_at": "2026-08-06 15:40:10.777898"
+  },
+  {
+   "id": 31,
+   "course_id": 14,
+   "lecturer_id": 6,
+   "created_at": "2026-08-06 15:40:16.884824"
+  },
+  {
+   "id": 32,
+   "course_id": 1,
+   "lecturer_id": 4,
+   "created_at": "2026-08-06 15:53:55.821769"
+  }
+ ],
+ "enrollments": [
+  {
+   "id": 17,
+   "course_id": 29,
+   "student_id": 9,
+   "created_at": "2026-08-06 15:41:53.209610"
+  },
+  {
+   "id": 29,
+   "course_id": 2,
+   "student_id": 1,
+   "created_at": "2026-08-06 15:53:55.845705"
+  },
+  {
+   "id": 30,
+   "course_id": 1,
+   "student_id": 1,
+   "created_at": "2026-08-06 15:53:55.852687"
+  },
+  {
+   "id": 31,
+   "course_id": 8,
+   "student_id": 3,
+   "created_at": "2026-08-06 15:53:55.870639"
+  },
+  {
+   "id": 32,
+   "course_id": 4,
+   "student_id": 2,
+   "created_at": "2026-08-06 15:53:55.886596"
+  },
+  {
+   "id": 33,
+   "course_id": 26,
+   "student_id": 9,
+   "created_at": "2026-08-06 15:53:55.902553"
+  },
+  {
+   "id": 34,
+   "course_id": 27,
+   "student_id": 9,
+   "created_at": "2026-08-06 15:53:55.912527"
+  },
+  {
+   "id": 35,
+   "course_id": 31,
+   "student_id": 9,
+   "created_at": "2026-08-06 15:53:55.922501"
+  },
+  {
+   "id": 36,
+   "course_id": 7,
+   "student_id": 8,
+   "created_at": "2026-08-06 15:53:55.940453"
+  },
+  {
+   "id": 39,
+   "course_id": 34,
+   "student_id": 12,
+   "created_at": "2026-08-06 15:54:15.790182"
+  },
+  {
+   "id": 40,
+   "course_id": 35,
+   "student_id": 12,
+   "created_at": "2026-08-06 15:54:15.798183"
+  },
+  {
+   "id": 41,
+   "course_id": 34,
+   "student_id": 13,
+   "created_at": "2026-08-06 15:54:38.187488"
+  },
+  {
+   "id": 42,
+   "course_id": 35,
+   "student_id": 13,
+   "created_at": "2026-08-06 15:54:38.198234"
+  },
+  {
+   "id": 56,
+   "course_id": 32,
+   "student_id": 22,
+   "created_at": "2026-08-06 17:01:45.257893"
+  },
+  {
+   "id": 57,
+   "course_id": 33,
+   "student_id": 22,
+   "created_at": "2026-08-06 17:01:45.267867"
+  },
+  {
+   "id": 62,
+   "course_id": 56,
+   "student_id": 24,
+   "created_at": "2026-08-06 19:47:26.810613"
+  },
+  {
+   "id": 63,
+   "course_id": 57,
+   "student_id": 24,
+   "created_at": "2026-08-06 19:47:26.828566"
+  },
+  {
+   "id": 64,
+   "course_id": 58,
+   "student_id": 24,
+   "created_at": "2026-08-06 19:47:26.849510"
+  },
+  {
+   "id": 65,
+   "course_id": 59,
+   "student_id": 24,
+   "created_at": "2026-08-06 19:47:26.864470"
+  }
+ ]
+}

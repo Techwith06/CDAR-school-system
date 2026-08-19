@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://cdar-api.vercel.app/api/:path*"
+    },
+    {
+      "source": "/media/:path*",
+      "destination": "https://cdar-api.vercel.app/media/:path*"
+    }
+  ]
+}

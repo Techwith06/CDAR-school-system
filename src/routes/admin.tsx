@@ -1,6 +1,7 @@
 import { createFileRoute, Link, Outlet, useNavigate } from "@tanstack/react-router";
 import {
   Bell,
+  Building2,
   Gauge,
   Home,
   LibraryBig,
@@ -28,6 +29,7 @@ const GROUPS = [
     links: [
       { to: "/admin", label: "Console", icon: Gauge, exact: true },
       { to: "/admin/materials", label: "Moderate catalog", icon: LibraryBig, exact: false },
+      { to: "/admin/departments", label: "Departments & programs", icon: Building2, exact: false },
       { to: "/admin/notifications", label: "System notices", icon: Bell, exact: false },
     ],
   },
@@ -125,14 +127,36 @@ function AdminLayout() {
                 label: "Oversight",
                 links: [
                   { to: "/admin", label: "Console", icon: Gauge, exact: true },
-                  { to: "/admin/materials", label: "Moderate catalog", icon: LibraryBig, exact: false },
-                  { to: "/admin/notifications", label: "System notices", icon: Bell, exact: false, badge: unread },
+                  {
+                    to: "/admin/materials",
+                    label: "Moderate catalog",
+                    icon: LibraryBig,
+                    exact: false,
+                  },
+                  {
+                    to: "/admin/departments",
+                    label: "Departments & programs",
+                    icon: Building2,
+                    exact: false,
+                  },
+                  {
+                    to: "/admin/notifications",
+                    label: "System notices",
+                    icon: Bell,
+                    exact: false,
+                    badge: unread,
+                  },
                 ],
               },
               {
                 label: "Accounts",
                 links: [
-                  { to: "/admin/register", label: "Register account", icon: UserPlus, exact: false },
+                  {
+                    to: "/admin/register",
+                    label: "Register account",
+                    icon: UserPlus,
+                    exact: false,
+                  },
                   { to: "/admin/users", label: "All users", icon: Users, exact: false },
                   { to: "/admin/profile", label: "My profile", icon: UserRound, exact: false },
                 ],

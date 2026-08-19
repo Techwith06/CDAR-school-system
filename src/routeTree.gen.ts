@@ -14,6 +14,7 @@ import { Route as AdminRouteImport } from './routes/admin'
 import { Route as LecturerRouteImport } from './routes/lecturer'
 import { Route as StudentRouteImport } from './routes/student'
 import { Route as AdminIndexRouteImport } from './routes/admin.index'
+import { Route as AdminDepartmentsRouteImport } from './routes/admin.departments'
 import { Route as AdminMaterialsRouteImport } from './routes/admin.materials'
 import { Route as AdminNotificationsRouteImport } from './routes/admin.notifications'
 import { Route as AdminProfileRouteImport } from './routes/admin.profile'
@@ -57,6 +58,11 @@ const StudentRoute = StudentRouteImport.update({
 const AdminIndexRoute = AdminIndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminDepartmentsRoute = AdminDepartmentsRouteImport.update({
+  id: '/departments',
+  path: '/departments',
   getParentRoute: () => AdminRoute,
 } as any)
 const AdminMaterialsRoute = AdminMaterialsRouteImport.update({
@@ -160,6 +166,7 @@ export interface FileRoutesByFullPath {
   '/admin': typeof AdminRouteWithChildren
   '/lecturer': typeof LecturerRouteWithChildren
   '/student': typeof StudentRouteWithChildren
+  '/admin/departments': typeof AdminDepartmentsRoute
   '/admin/materials': typeof AdminMaterialsRoute
   '/admin/notifications': typeof AdminNotificationsRoute
   '/admin/profile': typeof AdminProfileRoute
@@ -183,6 +190,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/admin/departments': typeof AdminDepartmentsRoute
   '/admin/materials': typeof AdminMaterialsRoute
   '/admin/notifications': typeof AdminNotificationsRoute
   '/admin/profile': typeof AdminProfileRoute
@@ -209,6 +217,7 @@ export interface FileRoutesById {
   '/admin': typeof AdminRouteWithChildren
   '/lecturer': typeof LecturerRouteWithChildren
   '/student': typeof StudentRouteWithChildren
+  '/admin/departments': typeof AdminDepartmentsRoute
   '/admin/materials': typeof AdminMaterialsRoute
   '/admin/notifications': typeof AdminNotificationsRoute
   '/admin/profile': typeof AdminProfileRoute
@@ -237,6 +246,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/lecturer'
     | '/student'
+    | '/admin/departments'
     | '/admin/materials'
     | '/admin/notifications'
     | '/admin/profile'
@@ -260,6 +270,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/admin/departments'
     | '/admin/materials'
     | '/admin/notifications'
     | '/admin/profile'
@@ -285,6 +296,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/lecturer'
     | '/student'
+    | '/admin/departments'
     | '/admin/materials'
     | '/admin/notifications'
     | '/admin/profile'
@@ -352,6 +364,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/admin/'
       preLoaderRoute: typeof AdminIndexRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/departments': {
+      id: '/admin/departments'
+      path: '/departments'
+      fullPath: '/admin/departments'
+      preLoaderRoute: typeof AdminDepartmentsRouteImport
       parentRoute: typeof AdminRoute
     }
     '/admin/materials': {
@@ -505,6 +524,7 @@ const AdminUsersRouteWithChildren = AdminUsersRoute._addFileChildren(
 )
 
 interface AdminRouteChildren {
+  AdminDepartmentsRoute: typeof AdminDepartmentsRoute
   AdminMaterialsRoute: typeof AdminMaterialsRoute
   AdminNotificationsRoute: typeof AdminNotificationsRoute
   AdminProfileRoute: typeof AdminProfileRoute
@@ -514,6 +534,7 @@ interface AdminRouteChildren {
 }
 
 const AdminRouteChildren: AdminRouteChildren = {
+  AdminDepartmentsRoute: AdminDepartmentsRoute,
   AdminMaterialsRoute: AdminMaterialsRoute,
   AdminNotificationsRoute: AdminNotificationsRoute,
   AdminProfileRoute: AdminProfileRoute,
