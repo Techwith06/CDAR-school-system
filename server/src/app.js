@@ -4,7 +4,6 @@ import multer from "multer";
 import path from "node:path";
 import fs from "node:fs";
 import crypto from "node:crypto";
-import { fileURLToPath } from "node:url";
 import { put } from "@vercel/blob";
 
 import * as store from "./store.js";
@@ -37,8 +36,15 @@ import {
   paginate,
 } from "./serializers.js";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const UPLOAD_DIR = path.join(__dirname, "..", "data", "uploads");
+const UPLOAD_DIR = resolveUploadDir();
+
+function resolveUploadDir() {
+  const candidates = [
+    path.join(process.cwd(), "server", "data", "uploads"),
+    path.join(process.cwd(), "data", "uploads"),
+  ];
+  return candidates.find((dir) => fs.existsSync(dir)) ?? candidates[0];
+}
 const MAX_FILE_BYTES = 30 * 1024 * 1024;
 
 const upload = multer({

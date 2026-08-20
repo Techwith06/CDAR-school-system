@@ -1,9 +1,6 @@
 import { createClient } from "@vercel/kv";
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const TABLES = [
   "departments",
@@ -30,7 +27,15 @@ if (useKV) {
 
 // ---- Local JSON-file store (dev only, no Vercel KV configured) ----
 
-const DATA_DIR = path.join(__dirname, "..", "data");
+const DATA_DIR = resolveDataDir();
+
+function resolveDataDir() {
+  const candidates = [
+    path.join(process.cwd(), "server", "data"),
+    path.join(process.cwd(), "data"),
+  ];
+  return candidates.find((dir) => fs.existsSync(dir)) ?? candidates[0];
+}
 const DB_FILE = path.join(DATA_DIR, "db.json");
 
 function emptyDb() {
