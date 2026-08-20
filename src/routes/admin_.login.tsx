@@ -26,11 +26,12 @@ function AdminLogin() {
       heading="Provision accounts. Moderate the catalog."
       blurb="Restricted access for repository administrators only."
       identifierLabel="Administrator email"
-      identifierPlaceholder="admin"
-      notice="Demo access: email “admin”, password “admin”. All sign-in attempts are logged."
+      identifierPlaceholder="admin@example.com"
+      notice="New administrator? Use the “Register with the admin code” option to create the first admin account."
       image={libraryImage}
       imageAlt="University library reading hall"
       panelClass="bg-crimson text-crimson-foreground"
+      adminSignup
     />
   );
 }

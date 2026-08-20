@@ -273,6 +273,63 @@ app.post("/api/auth/register/", upload.any(), async (req, res) => {
   }
 });
 
+app.post("/api/auth/admin-signup/", async (req, res) => {
+  try {
+    const data = req.body ?? {};
+    const code = String(data.admin_code || "").replace(/\s+/g, "").toLowerCase();
+    const expected = String(process.env.ADMIN_SIGNUP_CODE || "cdaradmin")
+      .replace(/\s+/g, "")
+      .toLowerCase();
+    if (!expected || code !== expected) {
+      return validationError(res, { admin_code: ["Invalid administrator code."] });
+    }
+    const password = (data.password || "").toString();
+    if (!password || password.length < 8) {
+      return validationError(res, {
+        password: ["This password is too short. It must contain at least 8 characters."],
+      });
+    }
+    const fullName = String(data.full_name || "").trim();
+    if (!fullName) return validationError(res, { full_name: ["This field is required."] });
+    const email = String(data.email || "").trim();
+    if (!email) return validationError(res, { email: ["This field is required."] });
+    const dataAll = await loadData();
+    if (dataAll.users.some((u) => u.email.toLowerCase() === email.toLowerCase())) {
+      return validationError(res, { email: ["A user with that email already exists."] });
+    }
+    const now = new Date().toISOString();
+    const user = {
+      id: await store.nextId("users"),
+      full_name: fullName,
+      email,
+      role: "admin",
+      student_id: null,
+      staff_id: null,
+      department_id: null,
+      program_id: null,
+      level: null,
+      semester: null,
+      phone_number: String(data.phone_number || ""),
+      date_of_birth: null,
+      gender: String(data.gender || ""),
+      nationality: String(data.nationality || ""),
+      address: String(data.address || ""),
+      profile_picture: null,
+      is_active: true,
+      is_staff: true,
+      password: hashPassword(password),
+      created_at: now,
+      updated_at: now,
+    };
+    await store.insert("users", user);
+    const tokens = issueTokens(user);
+    return res.status(201).json({ ...tokens, user: userOut(user) });
+  } catch (err) {
+    console.error("admin signup error", err);
+    return sendError(res, 400, "VALIDATION_ERROR", "Could not register administrator.");
+  }
+});
+
 app.get("/api/auth/id-preview/", authenticate, loadUserForRequest, async (req, res) => {
   const dataAll = await loadData();
   const role = req.query.role;

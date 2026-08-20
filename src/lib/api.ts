@@ -248,6 +248,19 @@ export async function apiRegister(payload: FormData): Promise<LoginResponse> {
   });
 }
 
+export async function apiAdminSignup(payload: {
+  full_name: string;
+  email: string;
+  password: string;
+  admin_code: string;
+}): Promise<LoginResponse> {
+  return rawRequest<LoginResponse>("/auth/admin-signup/", {
+    method: "POST",
+    auth: false,
+    body: JSON.stringify(payload),
+  });
+}
+
 export async function apiIdPreview(payload: {
   role: "student" | "lecturer";
   department?: string;

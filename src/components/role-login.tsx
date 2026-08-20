@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
-import { ArrowLeft, LogIn, ShieldCheck } from "lucide-react";
+import { ArrowLeft, LogIn, ShieldCheck, UserPlus } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { CdarLogo } from "@/components/cdar-logo";
@@ -8,6 +8,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { roleHome, useAuth } from "@/lib/auth";
+import { apiAdminSignup } from "@/lib/api";
 import type { Role } from "@/lib/cdar-data";
 
 type Props = {
@@ -23,6 +24,8 @@ type Props = {
   /** Imported image shown on the decorative panel and mobile banner. */
   image: string;
   imageAlt: string;
+  /** Enables self-registration for administrators (requires the admin code). */
+  adminSignup?: boolean;
 };
 
 export function RoleLoginForm({
@@ -36,11 +39,15 @@ export function RoleLoginForm({
   panelClass,
   image,
   imageAlt,
+  adminSignup = false,
 }: Props) {
   const { signIn } = useAuth();
   const navigate = useNavigate();
+  const [mode, setMode] = useState<"signin" | "signup">("signin");
   const [identifier, setIdentifier] = useState("");
   const [password, setPassword] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [adminCode, setAdminCode] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
   return (
@@ -87,10 +94,23 @@ export function RoleLoginForm({
               if (submitting) return;
               setSubmitting(true);
               try {
-                const user = await signIn(role, { identifier, password });
-                toast.success("Signed in", {
-                  description: `Welcome back, ${user.full_name}. Opening the ${role} portal.`,
-                });
+                if (mode === "signup") {
+                  await apiAdminSignup({
+                    full_name: fullName,
+                    email: identifier,
+                    password,
+                    admin_code: adminCode,
+                  });
+                  await signIn(role, { identifier, password });
+                  toast.success("Administrator created", {
+                    description: `Welcome, ${fullName}. Opening the admin console.`,
+                  });
+                } else {
+                  const user = await signIn(role, { identifier, password });
+                  toast.success("Signed in", {
+                    description: `Welcome back, ${user.full_name}. Opening the ${role} portal.`,
+                  });
+                }
                 navigate({ to: roleHome[role] });
               } catch (err) {
                 toast.error("Sign in failed", {
@@ -106,10 +126,26 @@ export function RoleLoginForm({
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
               {eyebrow}
             </p>
-            <h1 className="mt-2 text-2xl font-extrabold">Sign in</h1>
+            <h1 className="mt-2 text-2xl font-extrabold">
+              {mode === "signup" ? "Register administrator" : "Sign in"}
+            </h1>
             <p className="mt-1 text-sm text-muted-foreground">{blurb}</p>
 
             <div className="mt-6 grid gap-4">
+              {mode === "signup" ? (
+                <div className="grid gap-1.5">
+                  <Label htmlFor="full_name">Full name</Label>
+                  <Input
+                    id="full_name"
+                    name="full_name"
+                    value={fullName}
+                    onChange={(e) => setFullName(e.target.value)}
+                    placeholder="Repository administrator"
+                    required
+                    autoComplete="name"
+                  />
+                </div>
+              ) : null}
               <div className="grid gap-1.5">
                 <Label htmlFor="identifier">{identifierLabel}</Label>
                 <Input
@@ -119,7 +155,7 @@ export function RoleLoginForm({
                   onChange={(e) => setIdentifier(e.target.value)}
                   placeholder={identifierPlaceholder}
                   required
-                  autoComplete="username"
+                  autoComplete={mode === "signup" ? "email" : "username"}
                 />
               </div>
               <div className="grid gap-1.5">
@@ -132,9 +168,23 @@ export function RoleLoginForm({
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  autoComplete="current-password"
+                  autoComplete={mode === "signup" ? "new-password" : "current-password"}
                 />
               </div>
+              {mode === "signup" ? (
+                <div className="grid gap-1.5">
+                  <Label htmlFor="admin_code">Administrator code</Label>
+                  <Input
+                    id="admin_code"
+                    name="admin_code"
+                    value={adminCode}
+                    onChange={(e) => setAdminCode(e.target.value)}
+                    placeholder="cdaradmin"
+                    required
+                    autoComplete="off"
+                  />
+                </div>
+              ) : null}
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <label className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Checkbox id="remember" defaultChecked /> Keep me signed in
@@ -148,10 +198,35 @@ export function RoleLoginForm({
                 </button>
               </div>
               <Button type="submit" size="lg" className="mt-2" disabled={submitting}>
-                <LogIn className="mr-2 h-4 w-4" />
-                {submitting ? "Signing in…" : "Sign in"}
+                {mode === "signup" ? (
+                  <UserPlus className="mr-2 h-4 w-4" />
+                ) : (
+                  <LogIn className="mr-2 h-4 w-4" />
+                )}
+                {submitting
+                  ? mode === "signup"
+                    ? "Creating account…"
+                    : "Signing in…"
+                  : mode === "signup"
+                    ? "Create administrator"
+                    : "Sign in"}
               </Button>
             </div>
+
+            {adminSignup ? (
+              <button
+                type="button"
+                onClick={() => {
+                  setMode((m) => (m === "signup" ? "signin" : "signup"));
+                  setSubmitting(false);
+                }}
+                className="mt-4 text-sm font-medium text-primary hover:underline"
+              >
+                {mode === "signup"
+                  ? "Already registered? Sign in instead"
+                  : "New administrator? Register with the admin code"}
+              </button>
+            ) : null}
 
             <div className="mt-6 flex gap-3 rounded-lg border border-border bg-secondary/50 p-4 text-xs text-muted-foreground">
               <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
