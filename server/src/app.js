@@ -54,7 +54,23 @@ const upload = multer({
 
 const app = express();
 app.use(cors({ origin: true, credentials: true }));
-app.use(express.json({ limit: "10mb" }));
+
+const debugRaw = {};
+app.use(express.json({ limit: "10mb", verify: (req, res, buf, encoding) => {
+  if (req.path === "/api/debug/echo") debugRaw.raw = Buffer.from(buf);
+} }));
+
+app.post("/api/debug/echo", (req, res) => {
+  const raw = debugRaw.raw ?? Buffer.alloc(0);
+  res.status(200).json({
+    headers: req.headers,
+    rawB64: raw.toString("base64"),
+    rawUtf8: raw.toString("utf8"),
+    parsedBody: req.body,
+    typeofBody: typeof req.body,
+  });
+});
+
 app.use("/uploads", express.static(UPLOAD_DIR));
 
 function sendError(res, status, code, message) {
