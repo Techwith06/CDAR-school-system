@@ -797,15 +797,9 @@ the site should contain the colors of the logo as well
 add a theme switcher 
 note: all should be fully ui no backend
 
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/96c8b47e-2171-4082-b0d9-9e7735ce1a41).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+This project is a TanStack Start (React) + Nitro app deployed on Vercel, with an
+embedded Express API server (`server/`) bridged into the app via srvx
+`fetchNodeHandler` in `src/server.ts`.
 
 ## Development
 
